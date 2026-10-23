@@ -1,0 +1,31 @@
+services:
+  bot:
+    build: .
+    container_name: sentinel-bot
+    env_file:
+      - .env
+    restart: unless-stopped
+    init: true
+    volumes:
+      - sentinel_data:/app/data
+      - sentinel_logs:/app/logs
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+  webapp:
+    image: nginx:1.30.2-alpine3.23
+    container_name: sentinel-webapp
+    restart: unless-stopped
+    profiles: ["webapp"]
+    ports:
+      - "127.0.0.1:8080:80"
+    volumes:
+      - ./webapp:/usr/share/nginx/html:ro
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  sentinel_data:
+  sentinel_logs:

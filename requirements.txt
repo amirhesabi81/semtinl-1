@@ -1,0 +1,15 @@
+# Direct production dependency lock for Python 3.12.
+# Refresh intentionally and run the full Docker quality gate before release.
+python-telegram-bot[job-queue,webhooks,socks]==22.8
+httpx==0.28.1
+Pillow==12.3.0
+cryptography==48.0.1
+psycopg[binary]==3.2.3
+psycopg-pool==3.2.6
+redis==5.2.1
+sentry-sdk==2.61.0
+fastapi==0.128.2
+uvicorn[standard]==0.48.0
+python-multipart==0.0.29
+boto3==1.43.18
+reportlab==4.4.9

@@ -1,0 +1,14 @@
+{
+  "schema_version": 2,
+  "python_target": "3.12",
+  "python_runtime": "3.12.14",
+  "complete_transitive_lock": true,
+  "hashes_required": true,
+  "generated_by": "pip-tools==7.6.1 with reviewed hash-pinned SOCKS addition",
+  "attested_at": "2026-10-17T03:46:39.551438+00:00",
+  "production_lock_sha256": "dffa851784f9612894dcfd4ac704c588672da1a3ff32158dbdc199a7af3f9556",
+  "development_lock_sha256": "4c48eb7f394ba92f3e3d636b747b5383f9a1815fdfdef717c1d2da2eb3d0536d",
+  "reviewed_additions": [
+    "socksio==1.0.0; wheel SHA-256 verified"
+  ]
+}

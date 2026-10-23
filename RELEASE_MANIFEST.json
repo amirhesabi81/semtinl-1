@@ -1,0 +1,12 @@
+{
+  "version": "9.0.0-candidate.53",
+  "release_channel": "candidate",
+  "runtime_sha256": "b624d6c67092948c42f9a10f34f44bc803939669d4bc0d6d798c68145dffb4f3",
+  "quality_proof_source_sha256": "149f06244262a0fe46fa0a78128712da6ad79c95877fa8f71ec60a18c613438e",
+  "automated_tests_executed": 46,
+  "full_quality_gate_completed": false,
+  "live_deployment_verified": false,
+  "validation_report": "docs/TEST_REPORT_C52.json",
+  "quality_proof_note": "QUALITY_PROOF.json belongs to C52; regenerate with restore_runtime.py --profile quality on Linux",
+  "change_report": "docs/CHANGELOG_C53_FA.md"
+}
